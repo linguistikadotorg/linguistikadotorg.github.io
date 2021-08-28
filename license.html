@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-  WebFont.load({
-    google: {
-      families: ['Open Sans', 'Great Vibes']
-    }
-  });
-</script>
 <html lang="en-US">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -26,6 +18,21 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <script>
+      document.getElementsByTagName("html")[0].setAttribute("class","wf-loading");
+      WebFontConfig = {
+        google: {
+          families: ['Great Vibes', 'Open Sans']
+        }
+      };
+   
+      (function(d) {
+         var wf = d.createElement('script'), s = d.scripts[0];
+         wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+         wf.async = true;
+         s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
     <header class="page-header" role="banner">
       <h1 class="project-name"><a class="project-name" href="https://linguistika.org/">Linguistika</a></h1>
     </header>
