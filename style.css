@@ -303,6 +303,9 @@ a:hover { text-decoration: underline; }
 
 .project-name { margin-top: 15%; margin-bottom: 0.0rem; color: #689f38; text-decoration: none; }
 .project-name:hover { text-decoration: none; }
+.wf-loading h1 { visibility: hidden; }
+.wf-loading h2 { visibility: hidden; }
+.wf-loading p { visibility: hidden; }
 
 @media screen and (min-width: 64em) { .project-name { font-size: 7.25rem; } }
 
