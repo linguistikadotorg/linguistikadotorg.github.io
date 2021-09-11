@@ -19,7 +19,7 @@
   </head>
   <body>
     <script>
-      document.getElementsByTagName("html")[0].setAttribute("class","wf-loading");
+      document.getElementsByTagName("html")[0].classList.add("wf-loading");
       WebFontConfig = {
         google: {
           families: ['Great Vibes', 'Open Sans']
@@ -32,6 +32,10 @@
          wf.async = true;
          s.parentNode.insertBefore(wf, s);
       })(document);
+      
+      setTimeout(function () {
+      document.getElementsByTagName("html")[0].classList.remove("wf-loading");
+    }, 1000);
     </script>
     <header class="page-header" role="banner">
       <h1 class="project-name"><a class="project-name" href="https://linguistika.org/">Linguistika</a></h1>
